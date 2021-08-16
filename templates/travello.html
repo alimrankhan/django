@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% static 'images' as baseurl %}
+<http> <body> {{test.name}} </body></http>
+{{test.desc}} <br>
+{% for dest in dests %}
+
+						{{dest.name}}<br><br>
+						{{dest.desc}}<br><br>
+						{{dest.price}}<br><br>
+						<img src="{{baseurl}}/{{dest.img}}"><br><br>
+
+							
+									
+
+							{% endfor %}
+{% endblock %}

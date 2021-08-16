@@ -1,0 +1,22 @@
+{% load static %}
+
+
+{{test.name}}
+{{test.age}}
+<img src="{% static "images/pic.jpg" %}" border="5px" >
+<link rel="stylesheet" href="{% static "css/hello.css" %}"
+<html>
+	<head>
+		<h1> {{name}} </h1>
+		<style> a{ color:yellow  } </style>
+	</head>
+
+	<body>
+		<h2> Age: {{age}} </h2>
+	</body>
+	
+        {% if True %}
+        <a href="/"> Back to Homepage </a>
+		{% endif %}
+		
+</html>

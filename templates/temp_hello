@@ -1,0 +1,19 @@
+{% load static %}
+<img src="{% static "pic.jpg" %}" border="5px" >
+<link rel="stylesheet" href="{% static "test.css" %}"
+<html>
+	<head>
+		<h1> Hello, World! </h1>
+		<style> a{ color:yellow  } </style>
+	</head>
+
+	<body>
+		<h2> html and css </h2>
+	</body>
+	
+        {% if 'True' %}
+        <a href="/"> Back to Homepage </a>
+		{% endif %}
+		
+</html>
+

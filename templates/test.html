@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+{% static 'images' as baseurl %}
+<a href='/admin'><p align='right' ;color='white'>Admin Panel</p></a>
+<img src= "{% static "images/pic.jpg" %}">
+<link rel="stylesheet" href= "{% static "css/test.css" %}">
+<br>
+<body> 
+{{test1.name}}
+{{test1.age}}
+<img src= "{% static "destination_1.jpg" %}">
+<h1> This is a test app </h1>
+<img src="{{baseurl}}/{{test1.pict}}">
+<a href= "/">Homepage(django)</a>
+</body>
+
+
+{% endblock %}
