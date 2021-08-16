@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 {% static 'images' as baseurl %}
-<http> <body> {{test.name}} </body></http>
+{{test.name}}
 {{test.desc}} <br>
 {% for dest in dests %}
 
@@ -11,8 +11,8 @@
 						{{dest.price}}<br><br>
 						<img src="{{baseurl}}/{{dest.img}}"><br><br>
 
-							
-									
+
+
 
 							{% endfor %}
 {% endblock %}
