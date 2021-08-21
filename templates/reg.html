@@ -1,5 +1,15 @@
-{% extends 'base.html'}
+{% extends 'base.html' %}
 {% block content %}
-
-
+<form class="reg" action="/reg/" method="post">
+  {% csrf_token %}
+  <input type="text" name="fname" placeholder="First Name"><br><br>
+  <input type="text" name="lname" placeholder="Last Name"><br><br>
+  <input type="text" name="username" placeholder="Username"><br><br>
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password1" placeholder="Password">
+  <input type="password" name="password2" placeholder="Confirm Password">
+  <input type="submit">
+</form>
+{{method}}
 {% endblock %}
+<!-- //TODO: test todo --> -->

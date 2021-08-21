@@ -23,5 +23,6 @@ urlpatterns = [
     path('htm/', include('htm.urls')),
     path('travello/', include('travello.urls')),
     path('test/', include('test.urls')),
+    path('reg/', include('reg.urls')),
 ]
 urlpatterns+= static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
