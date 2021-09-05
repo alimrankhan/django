@@ -1,0 +1,8 @@
+.reg{color: green; font-style: oblique; font-size: 130%; }
+.login{color: blue; font-size: 130%;}
+.logout{
+  color: white;
+  font-size: 150%;
+
+}
+/* TODO: move login, logout, registration portion to the upper-right via CSS */

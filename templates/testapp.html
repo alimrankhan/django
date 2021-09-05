@@ -5,7 +5,19 @@
 	<title>Django HTML</title>
 </head>
 <body>
-	<a href="/reg"> Registration </a> 
+	{% load static %}
+	<link rel="stylesheet" href="{% static "css/testapp.css" %}">
+	{% if user.is_authenticated %}
+	<div class="logout">
+		<li>Hello, {{user.first_name}} </li>
+		<li> <a href="/reg/logout/"> LogOut </a> </li>
+	</div>
+	<li>Hello, {{user.first_name}} </li>
+	<li> <a href="/reg/logout/"> LogOut </a> </li>
+	{% else %}
+	<a class="reg" href="/reg"> Registration </a><br>
+	<a class="login" href="/reg/login/"> LogIn </a>
+	{% endif %}
 	<h2 style="color:purple" title="h2">{{name}}</h2>
 	<p title="p,b"><b>CSE at Comilla University</b></p>
 <br>

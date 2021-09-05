@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<form class="login" action="/reg/login/" method="post">
+  {% csrf_token %}
+  <input type="text" name="username" value="" placeholder="Username"><br><br>
+  <input type="password" name="password" value="" placeholder="Password">
+  <input type="submit" >
+</form>
+{% for msg in messages %}
+{{msg}}
+{% endfor %}
+{% endblock %}
